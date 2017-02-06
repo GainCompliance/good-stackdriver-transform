@@ -13,3 +13,38 @@ messages for [Stackdriver Logging](https://cloud.google.com/logging/) on the
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/good-stackdriver-transform.svg)](https://greenkeeper.io/)
+
+## Usage
+
+### Installation
+
+```bash
+$ npm install good-stackdriver-transform -S
+```
+
+### Config
+
+Include the transform in your good reporter pipeline:
+
+```json
+{
+  reporters: {
+    stackdriver: [
+      {
+        module: 'good-squeeze',
+        name: 'Squeeze',
+        args: [{log: '*', request: '*', response: '*', error: '*'}]
+      },
+      {module: 'good-stackdriver-transform'},
+      {
+        module: 'good-file',
+        args: ['/var/log/app_engine/custom_logs/logs.json']
+      }
+    ]
+  }
+}
+```
+
+If your application is running in the App Engine flexible environment, you can
+[write to a file under `/var/log/app_engine/custom_logs/`](https://cloud.google.com/error-reporting/docs/setup/app-engine-flexible-environment),
+as shown above.
