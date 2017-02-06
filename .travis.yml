@@ -4,6 +4,9 @@ notifications:
 after_success:
 - npm run report-coverage
 - npm run semantic-release
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
 env:
   global:
     secure: id3U1LqcvWxVBzzfoM9JlkLjyW0u6cJay6fNmzR4ArayFXhDif+zPcEYMAGOHw8Z2UStsAjdWnSH3et3LnHPVWFaqns2mQQtgA+R7k69PS3Foxd0tjhUXYF9E4Qmaw4RFrRWEG7XhMj0AuL/Q94U4T+CJe9JZxLOdLwJueS8cPzP6qBYV0hEQ+mQ5pyun8fpvbfwUZ0bTtKEsYSDzYkqhzWFGHY2uzO3xFWJHUZqpmLrBAL3/AV6lRba5+ivk4Q7TmSd+ntzGxJNqIYYT3HkOR04uTcpG4IDLwmPZH2EbDVuZCpKq2SajPnFg1YrLU4pl5Zd4iva0z4Dqql1IGt3LjzBWzou1MkZ50AOz6gXAqNbN2Ev6+i2Py7s1Yfd/gDpeF2lURKeo5/Zq3y2/8hGaWH8fnHl6mgm3gnCwR4vDW8bXUC8mEMnK4EOBDNNmWkzQMeJFnsqvW5opg3aHAtdP2OKoZJDlDi3Gm/dphf4WiqQywp8TH54H6eUmvheGb29KWA3G7B7rFJu43Tum6StDbbAf8tDvS3sRKvldgdxxlAMjrVGMZvBvgLvIRI5BVOiJ092iHF0VKaYE5EPj5vNirOFFuMRY5K26oQgNG/1V6ZAAvlhTFnnBob7UjVb9eZsyjnfssyP+0L61aMdBMhb3v+MP4ZQpLBwn+91DYPdFIM=
