@@ -11,6 +11,7 @@
     "tests:unit": "mocha --recursive test/unit",
     "test": "run-s lint:* coverage",
     "coverage": "nyc run-s tests:unit",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm test"
   },
