@@ -1,6 +1,8 @@
 {
   "name": "good-stackdriver-transform",
   "license": "MIT",
+  "main": "lib/transform.cjs.js",
+  "module": "lib/transform.es.js",
   "author": "Gain Compliance",
   "description": "a transform stream for turning good server events into jsonPayload formatted LogEntry messages",
   "repository": "GainCompliance/good-stackdriver-transform",
@@ -12,6 +14,8 @@
     "test": "run-s lint:* coverage",
     "coverage": "nyc run-s tests:unit",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "build": "rollup -c",
+    "prepublish": "run-s build",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm test"
   },
@@ -27,6 +31,7 @@
     "@travi/any": "1.0.2",
     "babel-cli": "6.22.2",
     "babel-preset-es2015-node": "6.1.1",
+    "babel-preset-es2015-rollup": "3.0.0",
     "chai": "3.5.0",
     "codecov": "1.0.1",
     "cz-conventional-changelog": "1.2.0",
@@ -36,6 +41,8 @@
     "mocha": "3.2.0",
     "npm-run-all": "4.0.1",
     "nyc": "10.1.2",
+    "rollup": "0.41.4",
+    "rollup-plugin-babel": "2.7.1",
     "validate-commit-msg": "2.11.1"
   }
 }
