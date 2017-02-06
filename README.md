@@ -27,7 +27,7 @@ $ npm install good-stackdriver-transform -S
 
 Include the transform in your good reporter pipeline:
 
-```json
+```js
 {
   reporters: {
     stackdriver: [
