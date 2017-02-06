@@ -1,6 +1,7 @@
 {
   "exclude": [
     "**/*-test.js",
-    "scripts/"
+    "scripts/",
+    "test/helpers/"
   ]
 }
