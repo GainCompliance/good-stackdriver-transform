@@ -1,0 +1,37 @@
+{
+  "name": "good-stackdriver-transform",
+  "license": "MIT",
+  "author": "Gain Compliance",
+  "description": "a transform stream for turning good server events into jsonPayload formatted LogEntry messages",
+  "repository": "GainCompliance/good-stackdriver-transform",
+  "bugs": "https://github.com/GainCompliance/good-stackdriver-transform/issues",
+  "homepage": "https://github.com/GainCompliance/good-stackdriver-transform#readme",
+  "scripts": {
+    "lint:md": "globstar --node -- markdownlint **/*.md",
+    "tests:unit": "mocha --recursive test/unit",
+    "test": "run-s lint:* coverage",
+    "coverage": "nyc run-s tests:unit",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@travi/any": "1.0.2",
+    "chai": "3.5.0",
+    "cz-conventional-changelog": "1.2.0",
+    "globstar": "1.0.0",
+    "husky": "0.13.1",
+    "markdownlint-cli": "0.2.0",
+    "mocha": "3.2.0",
+    "npm-run-all": "4.0.1",
+    "nyc": "10.1.2",
+    "validate-commit-msg": "2.11.1"
+  }
+}
