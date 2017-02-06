@@ -5,7 +5,7 @@ server events into `jsonPayload` formatted [LogEntry](https://cloud.google.com/l
 messages for [Stackdriver Logging](https://cloud.google.com/logging/) on the
 [Google Cloud Platform](https://cloud.google.com/)
 
-[![npm](https://img.shields.io/npm/v/@gaincompliance/good-stackdriver-transform.svg?maxAge=2592000)](https://www.npmjs.com/package/@gaincompliance/good-stackdriver-transform)
+[![npm](https://img.shields.io/npm/v/good-stackdriver-transform.svg?maxAge=2592000)](https://www.npmjs.com/package/good-stackdriver-transform)
 [![license](https://img.shields.io/github/license/GainCompliance/good-stackdriver-transform.svg)](LICENSE)
 
 [![Build Status](https://img.shields.io/travis/GainCompliance/good-stackdriver-transform/master.svg?style=flat)](https://travis-ci.org/GainCompliance/good-stackdriver-transform)
