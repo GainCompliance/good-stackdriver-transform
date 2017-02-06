@@ -1,7 +1,7 @@
 {
   "name": "good-stackdriver-transform",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/transform.cjs.js",
   "module": "lib/transform.es.js",
   "author": "Gain Compliance",
