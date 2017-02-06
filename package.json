@@ -1,7 +1,7 @@
 {
   "name": "good-stackdriver-transform",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.0-semantically-released",
   "main": "lib/transform.cjs.js",
   "module": "lib/transform.es.js",
   "author": "Gain Compliance",
@@ -17,6 +17,7 @@
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "build": "rollup -c",
     "prepublish": "run-s build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm test"
   },
@@ -44,6 +45,7 @@
     "nyc": "10.1.2",
     "rollup": "0.41.4",
     "rollup-plugin-babel": "2.7.1",
+    "semantic-release": "6.3.2",
     "validate-commit-msg": "2.11.1"
   }
 }
