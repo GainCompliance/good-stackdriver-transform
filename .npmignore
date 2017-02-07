@@ -1,0 +1,16 @@
+test/
+scripts/
+src/
+coverage/
+.nyc_output
+
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.yml
+.gitattributes
+.npmrc
+.nvmrc
+.nycrc
+.travis.yml
+rollup.config.js
