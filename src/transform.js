@@ -18,14 +18,11 @@ export default class extends stream.Transform {
 
     next(null, JSON.stringify({
       labels: tags.reduce((acc, tag) => ({...acc, [tag]: true}), {}),
-      jsonPayload: {
-        message,
-        event,
-        context: {
-          httpRequest: {
-            requestMethod: method,
-            requestUrl: path
-          }
+      message,
+      context: {
+        httpRequest: {
+          requestMethod: method,
+          requestUrl: path
         }
       }
     }));

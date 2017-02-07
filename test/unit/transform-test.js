@@ -36,14 +36,11 @@ suite('transform', () => {
     reader.once('end', () => {
       assert.equal(writer.data[0], JSON.stringify({
         labels: tagsAsObject,
-        jsonPayload: {
-          message: data,
-          event,
-          context: {
-            httpRequest: {
-              requestMethod: method,
-              requestUrl: path
-            }
+        message: data,
+        context: {
+          httpRequest: {
+            requestMethod: method,
+            requestUrl: path
           }
         }
       }));
@@ -69,14 +66,11 @@ suite('transform', () => {
     reader.once('end', () => {
       assert.equal(writer.data[0], JSON.stringify({
         labels: tagsAsObject,
-        jsonPayload: {
-          message: data.stack,
-          event,
-          context: {
-            httpRequest: {
-              requestMethod: method,
-              requestUrl: path
-            }
+        message: data.stack,
+        context: {
+          httpRequest: {
+            requestMethod: method,
+            requestUrl: path
           }
         }
       }));
