@@ -1,5 +1,10 @@
 # good-stackdriver-transform
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+:warning: we've discontinued development of this transform in favor of using [good-bunyan](https://github.com/muzzley/good-bunyan)
+in combination with [@google-cloud/logging-bunyan](https://googlecloudplatform.github.io/google-cloud-node/#/docs/logging-bunyan/0.4.1/logging-bunyan)
+
 a transform stream for turning [good](https://github.com/GainCompliance/good-stackdriver-transform)
 server events into `jsonPayload` formatted [LogEntry](https://cloud.google.com/logging/docs/api/reference/rest/v2/LogEntry)
 messages for [Stackdriver Logging](https://cloud.google.com/logging/) on the
@@ -12,7 +17,6 @@ messages for [Stackdriver Logging](https://cloud.google.com/logging/) on the
 [![Codecov](https://img.shields.io/codecov/c/github/GainCompliance/good-stackdriver-transform.svg)](https://codecov.io/github/GainCompliance/good-stackdriver-transform)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Greenkeeper badge](https://badges.greenkeeper.io/GainCompliance/good-stackdriver-transform.svg)](https://greenkeeper.io/)
 
 ## Usage
